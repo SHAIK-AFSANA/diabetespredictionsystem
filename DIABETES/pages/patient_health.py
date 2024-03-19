@@ -13,8 +13,8 @@ db_connection = mysql.connector.connect(
 
 def predict_diabetes(age, gender, *symptoms):
     # Load the trained model and scaler
-    RF_classifier = joblib.load(open('DIABETES/Backend/diabetic_predictor.pkl','rb'))
-    sc = joblib.load(open('DIABETES/Backend/Standard_Scalar.pkl','rb'))
+    RF_classifier = joblib.load(open('DIABETES/Backend/diabetic_predictor (2).pkl','rb'))
+    sc = joblib.load(open('DIABETES/Backend/Standard_Scalar (2).pkl','rb'))
 
     # Transform input features and make prediction
     prediction = RF_classifier.predict(sc.transform(np.array([[age, gender, *symptoms]])))
