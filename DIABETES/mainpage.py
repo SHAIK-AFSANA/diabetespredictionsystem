@@ -31,7 +31,7 @@ class MultiApp:
         st.markdown(html_temp, unsafe_allow_html=True)
 
         with st.sidebar:
-            image = Image.open("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.everydayhealth.com%2Fdiabetes%2Fawareness-month%2F&psig=AOvVaw2DEQLIujDDWVkCJ476w4ae&ust=1710918779015000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJCmzaPj_4QDFQAAAAAdAAAAABAE")
+            image = Image.open("DIABETES/Images/world-diabetes-day-elements-png.webp")
             new_image = image.resize((600, 400))
             st.image(new_image)
         with st.sidebar:      
