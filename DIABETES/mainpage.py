@@ -31,7 +31,7 @@ class MultiApp:
         st.markdown(html_temp, unsafe_allow_html=True)
 
         with st.sidebar:
-            image = Image.open("Images/world-diabetes-day-elements-png.webp")
+            image = Image.open("/DIABETES/Images/world-diabetes-day-elements-png.webp")
             new_image = image.resize((600, 400))
             st.image(new_image)
         with st.sidebar:      
